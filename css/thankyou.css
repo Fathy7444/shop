@@ -1,0 +1,468 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+body {
+    font-family: "Mukta",
+        -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto,
+        "Helvetica Neue",
+        Arial, sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* start header  */
+
+header {
+    background: #fff;
+    margin-bottom: 0px;
+    z-index: 1999;
+    position: relative;
+}
+
+.top-nav {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.top-nav .icon {
+    font-size: 20px;
+    color: #7a7a7a;
+}
+
+.top-nav .icon:hover {
+    color: black;
+}
+
+.top-nav .top-nav-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav .top-nav-icons .left form {
+    position: relative;
+    height: 40px;
+}
+
+.top-nav .top-nav-icons .left form span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.top-nav .top-nav-icons .left form input {
+    height: 40px;
+    padding: 0 0 0 40px;
+    font-size: 20px;
+    border: 0;
+}
+
+.top-nav .top-nav-icons .left form .control:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none;
+}
+
+.top-nav .top-nav-icons .mid {
+    align-items: center;
+}
+
+.top-nav .top-nav-icons .mid .logo a {
+    text-transform: uppercase;
+    color: #25262a;
+    letter-spacing: .2em;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: 2px solid #25262a;
+}
+
+
+.top-nav .top-nav-icons .right {
+    width: 282px;
+}
+
+.top-nav .top-nav-icons .right div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-nav .top-nav-icons .right div ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav .top-nav-icons .right div li {
+    width: 30px;
+}
+
+.top-nav .top-nav-icons .right div li .icon-cart {
+    position: relative;
+}
+
+.top-nav .top-nav-icons .right div li .icon-cart .cart-count {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #7971ea;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: -10px;
+    margin-left: -5px;
+    color: white;
+}
+
+
+.buttom-nav {
+    border-top: 1px solid #f3f3f4;
+}
+
+
+.buttom-nav .container .site-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 300px;
+}
+
+.buttom-nav .site-menu>li>a {
+    padding: 10px 10px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: #25262a;
+    font-size: 15px;
+    text-decoration: none !important;
+}
+
+.buttom-nav .site-menu>li>a:hover {
+    transition: 0.3s;
+    color: #7971ea;
+}
+
+.buttom-nav .container .site-menu .has-more>a {
+    position: relative;
+    padding-right: 20px;
+}
+
+.buttom-nav .container .site-menu .has-more a::before {
+    position: absolute;
+    content: "\e313";
+    font-size: 16px;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: 'icomoon';
+}
+
+.buttom-nav .container .site-menu .active>a {
+    color: #7971ea;
+}
+
+/* end header  */
+
+/* start url  */
+
+.url {
+    background-color: #f8f9fa;
+}
+
+.url .container div {
+    display: flex;
+    align-items: center;
+}
+
+.url .container div h3 {
+    padding: 20px 10px;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+.url .container div h3 a {
+    color: #7971ea;
+}
+
+.url .container div h3 a:hover {
+    color: #3a2ee0;
+    text-decoration: none;
+    transition: 1s;
+}
+
+/* end url  */
+
+/* start site-section  */
+
+.site-section {
+    padding: 50px 0;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.site-section .row {
+    display: flex;
+    justify-content: center;
+}
+
+.site-section .row .text-center {
+    text-align: center;
+}
+
+.site-section .row .text-center .text-success {
+    font-size: 100px;
+    color: green;
+}
+
+.site-section .row .text-center .text-black {
+    font-size: 70px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.site-section .row .text-center .lead {
+    line-height: 1.7;
+    color: #8c92a0;
+    font-weight: 300;
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.site-section .row .text-center p a {
+    color: #fff;
+    background-color: #4f45e3;
+    border-color: #4539e2;
+    width: 150px;
+    display: inline-block;
+    height: 50px;
+    padding: 15px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.site-section .row .text-center p a:hover {
+    box-shadow: 0 5px 20px -7px rgb(0 0 0 / 90%) !important;
+    top: -2px;
+    transition: 0.3s;
+}
+
+/* end site-section  */
+
+/* start footer  */
+
+.site-footer {
+    padding: 4em 0;
+}
+
+.site-footer ul li {
+    margin-bottom: 10px;
+}
+
+.site-footer ul li a {
+    color: #5c626e;
+}
+
+.site-footer ul li a:hover {
+    color: #7971ea;
+}
+
+.site-footer .footer-heading {
+    font-size: 20px;
+    color: #25262a;
+}
+
+.site-footer .row-5 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-footer .row-5 .Navigations {
+    padding-right: 30px;
+}
+
+.site-footer .row-6 {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    flex-wrap: wrap;
+}
+
+.site-footer .row-6 .head {
+    width: 450px;
+}
+
+.site-footer .footer-heading {
+    padding-bottom: 40px;
+}
+
+.site-footer .row-6 .list-unstyled li {
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+.site-footer .row-5 .Promo {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.site-footer .row-5 .Promo img {
+    border-style: none;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.site-footer .row-5 .Promo a h3 {
+    font-size: 15px;
+    color: #7971ea;
+    padding-top: 20px;
+    font-weight: 400;
+}
+
+.site-footer .row-5 .Promo a {
+    margin-top: -40px;
+}
+
+.site-footer .row-5 .Promo a p {
+    font-size: 15px;
+    padding-top: 10px;
+    color: #5c626e;
+}
+
+.site-footer .row-5 .contact-info {
+    width: 300px;
+}
+
+.site-footer .row-5 .contact-info .Contact {
+    padding-bottom: 50px;
+}
+
+.site-footer .row-5 .contact-info .Contact .all-info .address {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 15px;
+    color: #25262a;
+}
+
+.site-footer .row-5 .contact-info .Contact .all-info .address::before {
+    content: "\e8b4";
+    top: 0;
+    font-family: "icomoon";
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    line-height: 1;
+    color: #7971ea;
+}
+
+.site-footer .row-5 .contact-info .Contact .all-info .phone {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 15px;
+    color: #25262a;
+}
+
+.site-footer .row-5 .contact-info .Contact .all-info .phone::before {
+    top: 0;
+    font-family: "icomoon";
+    content: "\f095";
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    line-height: 1;
+    color: #7971ea;
+}
+
+.site-footer .row-5 .contact-info .Contact .all-info .email {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 15px;
+    color: #25262a;
+}
+
+.site-footer .row-5 .contact-info .Contact .all-info .email::before {
+    top: 0;
+    font-family: "icomoon";
+    content: "\f0e0";
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    line-height: 1;
+    color: #7971ea;
+}
+
+.site-footer .row-5 .contact-info .Subscribe .footer-heading {
+    font-size: 20px;
+    color: #25262a;
+    font-weight: 700;
+}
+
+.site-footer .row-5 .contact-info .Subscribe form .form-group {
+    margin-top: 20px;
+}
+
+.site-footer .row-5 .contact-info .Subscribe form .form-group .Email {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 0px 0 0 15px;
+}
+
+.site-footer .row-5 .contact-info .Subscribe form .form-group .Send {
+    position: absolute;
+    margin-left: -77px;
+    margin-top: 2px;
+    width: 75px;
+    height: 46px;
+    background-color: #7971ea;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+}
+
+.site-footer .container .Copyright {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0 0 0;
+}
+
+.site-footer .container .Copyright div p {
+    color: #8c92a0;
+}
+
+.site-footer .container .Copyright div p a {
+    color: #7971ea;
+}
+
+/* end footer  */
